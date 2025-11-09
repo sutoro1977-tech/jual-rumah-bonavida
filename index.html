@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIJUAL CEPAT! Rumah Siap Huni Bonavida Park Tipe 69/117 - Purwokerto</title>
+    <meta name="description" content="Bonavida Park Blok A5 Tipe 69/117. 3 KT, 2 KM, SHM. Termasuk AC 2 Unit & Water Heater. Lokasi 7 Menit ke UNSOED, dekat Baturaden. Hubungi Sutoro (0813.1761.8271) sekarang.">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3C4048; /* Dark Gray/Anthracite - Warna Fasad */
+            --secondary-color: #A52A2A; /* Brown/Maroon - Warna Aksen Kayu */
+            --accent-color: #FFD700; /* Gold - Aksen Highlight */
+            --light-color: #f8f8f8;
+            --dark-color: #333;
+            --cta-bg: #4CAF50; /* Green untuk WhatsApp */
+            --cta-hover: #45a049;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+
+      .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* --- Header Section --- */
+        #header-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Tampak Depan2.jpg') center center no-repeat; 
+            background-size: cover;
+            background-position: center; 
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+        
+        #header-hero::before {
+            content: "DIJUAL! - RUMAH SIAP HUNI";
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 8px 20px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            animation: pulse 1.5s infinite; 
+        }
+        
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(165, 42, 42, 0.7); } 
+            70% { box-shadow: 0 0 0 10px rgba(165, 42, 42, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(165, 42, 42, 0); }
+        }
+
+        #hero-content h1 {
+            font-size: clamp(1.8rem, 5vw, 3.5rem);
+            margin-bottom: 10px;
+            line-height: 1.1;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        #hero-content p {
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            font-weight: 600;
+            color: var(--accent-color);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+        
+      .cta-button {
+            display: inline-block;
+            background-color: var(--cta-bg);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, transform 0.2s;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+            border: none;
+            cursor: pointer;
+        }
+
+      .cta-button:hover {
+            background-color: var(--cta-hover);
+            transform: translateY(-2px);
+        }
+        
+        /* --- Profil Penjual Section --- */
+        #profile {
+            background-color: white;
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 5px solid var(--accent-color);
+        }
+
+        #profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--primary-color);
+            margin-bottom: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #profile h2 {
+            color: var(--secondary-color);
+            margin-bottom: 5px;
+        }
+
+        #profile p {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-top: 0;
+            font-size: 1.1rem;
+        }
+        
+        /* --- Galeri Section --- */
+        #gallery {
+            padding: 60px 0;
+            background-color: var(--light-color);
+        }
+        
+        #gallery h2 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 40px;
+        }
+        
+      .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 15px;
+        }
+
+      .photo-grid .gallery-item {
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+      .photo-grid img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            cursor: zoom-in;
+        }
+        
+      .photo-grid img:hover {
+            transform: scale(1.05);
+        }
+        
+      .photo-grid .caption {
+            padding: 10px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+        }
+
+        /* --- Spesifikasi Section --- */
+        #specs {
+            padding: 60px 0;
+            background-color: #fff;
+        }
+
+        #specs h2 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        #specs h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+            margin: 10px auto 0;
+        }
+
+      .spec-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+      .spec-item {
+            background-color: var(--light-color);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+        
+      .spec-item:hover {
+            transform: translateY(-5px);
+        }
+
+      .spec-item i {
+            font-size: 2rem;
+            color: var(--secondary-color);
+            margin-right: 15px;
+        }
+
+      .spec-item div p:first-child {
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 0;
+        }
+
+      .spec-item div p:last-child {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        /* --- Technical Specs List --- */
+        .technical-specs {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dashed #ccc;
+        }
+        
+        .technical-specs h3 {
+            color: var(--secondary-color);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .technical-specs ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .technical-specs li {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .technical-specs li strong {
+            color: var(--accent-color);
+            margin-right: 5px;
+        }
+
+        /* --- Lokasi Section --- */
+        #location {
+            padding: 60px 0;
+            background-color: var(--light-color);
+        }
+
+        #location h2 {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 40px;
+        }
+        
+        /* FIX: Menggunakan flexbox untuk mengatur tata letak peta dan list */
+      .location-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            align-items: flex-start; /* FIX: Memastikan list item sejajar dari atas */
+            justify-content: space-between;
+        }
+
+      .proximity-list {
+            flex: 1;
+            min-width: 300px;
+        }
+
+      .proximity-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+      .proximity-list li {
+            background-color: var(--secondary-color);
+            color: white;
+            margin-bottom: 10px;
+            padding: 12px 15px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+      .proximity-list li i {
+            margin-right: 10px;
+            color: var(--accent-color);
+        }
+
+      .map-embed {
+            flex: 2;
+            min-width: 300px;
+            height: 400px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            /* Tambahkan flex untuk memastikan iframe menempati ruang penuh */
+            display: flex; 
+        }
+        
+      .map-embed iframe {
+            width: 100%;
+            height: 100%;
+            border: 0; 
+            display: block;
+        }
+
+        /* --- KPR Section --- */
+        #kpr-simulator {
+            padding: 60px 0;
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+        }
+
+        #kpr-simulator h2 {
+            color: var(--accent-color);
+            margin-bottom: 20px;
+        }
+        
+        #kpr-form label, #kpr-form input, #kpr-form select {
+            display: block;
+            width: 100%;
+            max-width: 300px;
+            margin: 10px auto;
+            text-align: left;
+        }
+        
+        #kpr-form input[type="number"], #kpr-form select {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            color: var(--dark-color);
+        }
+        
+        #kpr-form button {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #kpr-form button:hover {
+            background-color: #a54040;
+        }
+
+        #kpr-result {
+            margin-top: 20px;
+            padding: 15px;
+            border: 2px solid var(--accent-color);
+            border-radius: 4px;
+            background-color: #f0f0f0;
+            font-size: 1.1rem;
+            font-weight: 600;
+            display: none;
+            color: var(--dark-color);
+            text-align: center;
+        }
+        
+        /* --- CTA Footer & Floating CTA --- */
+        #contact-footer {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        #contact-footer h2 {
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+
+      .floating-cta {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        
+      .floating-cta a {
+            background-color: var(--cta-bg);
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+        
+      .floating-cta a:hover {
+            background-color: var(--cta-hover);
+        }
+        
+      .floating-cta i {
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+        
+        /* Font Awesome Icons */
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            #header-hero {
+                height: 60vh;
+            }
+
+          .location-content {
+                flex-direction: column;
+            }
+            
+          .map-embed {
+                height: 250px;
+            }
+        }
+    </style>
+    </head>
+<body>
+
+    <section id="header-hero">
+        <div id="hero-content" class="container">
+            <h1>RUMAH SIAP HUNI MODERN 3 KT (69/117) BONAVIDA PARK</h1>
+            <p>Karanggintung, Sumbang, Purwokerto. Udara Pasti Sejuk!</p>
+            <p>Lokasi Super Strategis: Hanya <strong>7 Menit ke UNSOED</strong> dan Dekat Wisata Baturaden</p>
+
+            <a href="https://wa.me/6281317618271?text=Halo%20Bapak%20Sutoro%2C%20saya%20tertarik%20dengan%20properti%20Bonavida%20Park%20Purwokerto.%20Bisa%20jadwalkan%20survei%3F" class="cta-button">
+                <i class="fab fa-whatsapp"></i> HUBUNGI SUTORO SEKARANG (WhatsApp)
+            </a>
+        </div>
+    </section>
+
+    <section id="profile">
+        <div class="container">
+            <img id="profile-picture" src="Profile Sutoro.jpg" alt="Foto Profil Sutoro">
+            <h2>Sutoro</h2>
+            <p>Hubungi <strong>Pemilik Langsung</strong> (Tanpa Perantara)</p>
+            <p>Unit Siap Huni, Tidak Perlu Renovasi (<strong>SHM Ready</strong>)</p>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h2>📸 Galeri Foto & Denah Lantai</h2>
+            <p style="text-align: center; margin-bottom: 30px; font-weight: 600;">Lihat denah tata ruang dan detail fasilitas. Dijamin <strong>Real Picture</strong>!</p>
+            
+            <div class="photo-grid">
+                
+                <div class="gallery-item">
+                    <img src="Denah.jpg" alt="Denah Lantai Bonavida Park Tipe 69/117">
+                    <p class="caption">Denah Lantai Tipe 69/117 (3 Kamar Tidur)</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="Tampak Depan2.jpg" alt="Tampak Depan Rumah Bonavida Park">
+                    <p class="caption">Tampak Depan Modern 1 Lantai (Tipe 69/117)</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="Ruang Keluarga.jpg" alt="Ruang Keluarga">
+                    <p class="caption">Ruang Keluarga dan Dapur Terbuka</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="Ruang Tamu.jpg" alt="Ruang Tamu">
+                    <p class="caption">Ruang Tamu (Sudah Termasuk Cordyn)</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Kamar Tidur Utama.jpg" alt="Kamar Tidur Utama">
+                    <p class="caption">Kamar Tidur Utama</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="Kamar Tidur Depan.jpg" alt="Kamar Tidur Depan">
+                    <p class="caption">Kamar Tidur Depan (Siap Ditempati)</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="Kamar Mandi Dalam.jpg" alt="Kamar Mandi Dalam">
+                    <p class="caption">Kamar Mandi Dalam (Lengkap <strong>Water Heater</strong>)</p>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="Kamar Mandi Utama.jpg" alt="Kamar Mandi Utama">
+                    <p class="caption">Kamar Mandi Utama (Kloset Duduk)</p>
+                </div>
+                
+            </div>
+            </div>
+    </section>
+
+    <section id="specs">
+        <div class="container">
+            <h2>Spesifikasi Properti Lengkap & Fasilitas Mewah</h2>
+            <div class="spec-grid">
+                
+                <div class="spec-item">
+                    <i class="fas fa-ruler-combined"></i>
+                    <div>
+                        <p>Luas Bangunan/Tanah</p>
+                        <p><strong>LT 117 m² / LB 69 m²</strong>, Sertifikat <strong>SHM</strong></p>
+                    </div>
+                </div>
+                <div class="spec-item">
+                    <i class="fas fa-bed"></i>
+                    <div>
+                        <p>Kamar Tidur & Mandi</p>
+                         <p><strong>3 Kamar Tidur</strong> & <strong>2 Kamar Mandi</strong></p>
+                    </div>
+                </div>
+                <div class="spec-item">
+                    <i class="fas fa-plug"></i>
+                    <div>
+                        <p>Listrik & Air</p>
+                         <p>Listrik <strong>2.200W</strong> & Air <strong>PAM</strong></p>
+                    </div>
+                </div>
+                <div class="spec-item">
+                    <i class="fas fa-car-side"></i>
+                    <div>
+                        <p>Akses Kendaraan</p>
+                         <p>Termasuk <strong>Carport</strong> & <strong>Taman Depan</strong></p>
+                    </div>
+                </div>
+                
+                <div class="spec-item">
+                    <i class="fas fa-snowflake"></i>
+                    <div>
+                        <p>Fasilitas Pendingin</p>
+                         <p>Termasuk <strong>AC 2 Unit</strong></p>
+                    </div>
+                </div>
+                <div class="spec-item">
+                    <i class="fas fa-faucet-drip"></i>
+                    <div>
+                        <p>Fasilitas Air Panas</p>
+                        <p>Termasuk <strong>Water Heater</strong></p>
+                    </div>
+                </div>
+                <div class="spec-item">
+                    <i class="fas fa-utensils"></i>
+                    <div>
+                        <p>Dapur & Interior</p>
+                        <p>Termasuk <strong>Kitchen (+Stove)</strong> & <strong>Cordyn</strong></p>
+                    </div>
+                </div>
+                <div class="spec-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <div>
+                        <p>Keamanan</p>
+                        <p><strong>Keamanan 24 Jam</strong> di dalam Cluster</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="technical-specs">
+                <h3>Spesifikasi Teknis Material Bangunan</h3>
+                <ul>
+                    <li><i class="fas fa-home"></i> <strong>Atap</strong>: Rangka Atap Baja</li>
+                    <li><i class="fas fa-city"></i> <strong>Dinding</strong>: Bata Merah</li>
+                    <li><i class="fas fa-border-all"></i> <strong>Lantai</strong>: Granit</li>
+                    <li><i class="fas fa-cubes"></i> <strong>Pondasi</strong>: Batu Kali</li>
+                </ul>
+            </div>
+            
+            <div style="text-align: center; margin-top: 30px;">
+                 <a href="#contact-footer" class="cta-button" style="background-color: var(--primary-color);">
+                    Cek Unit Langsung & Nego Sekarang!
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="location">
+        <div class="container">
+            <h2>🌍 Lokasi Super Strategis di Purwokerto Utara (Udara Sejuk)</h2>
+            <div class="location-content">
+                <div class="map-embed">
+                   <iframe 
+                        src="https://maps.google.com/maps?q=Karanggintung+Sumbang+Purwokerto&t=&z=14&ie=UTF8&iwloc=&output=embed" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="proximity-list">
+                    <ul>
+                        <li><i class="fas fa-university"></i> Hanya 7 menit ke UNSOED (Universitas Jenderal Soedirman)</li>
+                        <li><i class="fas fa-tree"></i> Sangat dekat ke area wisata alam Baturaden/Sumbang (Telaga Sunyi, Hutan Pinus Limpakuwus)</li>
+                        <li><i class="fas fa-store"></i> Dekat pusat kuliner dan fasilitas umum (Pusat Kuliner UMKM, Minimarket, Apotek)</li>
+                        <li><i class="fas fa-mountain"></i> Udara pasti Sejuk! (Cocok untuk tempat tinggal atau investasi)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kpr-simulator">
+        <div class="container">
+            <h2>💰 Hitung Simulasi Cicilan KPR Anda</h2>
+            <p>Masukkan Harga Jual (Nego), DP dan Tenor KPR Ideal Anda</p>
+            <div id="kpr-form">
+                <label for="price">Harga Properti (Rp)</label>
+                <input type="number" id="price" placeholder="Harga Jual (Nego) - Cth: 800000000" value=""> 
+                
+                <label for="downPayment">Uang Muka (Down Payment - DP)</label>
+                <input type="number" id="downPayment" placeholder="Masukkan DP Anda (Minimal 10%)" value="">
+                
+                <label for="tenor">Tenor (Tahun)</label>
+                <select id="tenor">
+                    <option value="5">5 Tahun</option>
+                    <option value="10">10 Tahun</option>
+                    <option value="15" selected>15 Tahun</option>
+                    <option value="20">20 Tahun</option>
+                </select>
+                
+                <label for="interestRate">Suku Bunga Tahunan (%)</label>
+                <input type="number" id="interestRate" placeholder="Asumsi Bunga Bank (Cth: 8.5)" value="" step="0.1">
+
+                <button onclick="calculateKPR()">Hitung Simulasi Cicilan</button>
+                
+                <div id="kpr-result"></div>
+            </div>
+            <small style="color: rgba(255, 255, 255, 0.7);">*Simulasi ini adalah estimasi awal. Hubungi Sutoro untuk detail KPR ke bank partner.*</small>
+        </div>
+    </section>
+
+    <section id="contact-footer">
+        <div class="container">
+            <h2>Unit 69/117 Ini Adalah Penawaran Terbaik di Area Sumbang/Baturaden!</h2>
+            <p style="font-size: 1.1rem; font-weight: 500;">Jangan tunda lagi! Unit siap huni, tidak perlu renovasi. Hubungi <strong>Pemilik Langsung</strong> untuk negosiasi harga terbaik.</p>
+            <a href="https://wa.me/6281317618271?text=Halo%20Bapak%20Sutoro%2C%20saya%20tertarik%20dengan%20properti%20Bonavida%20Park%20Purwokerto.%20Bisa%20jadwalkan%20survei%3F" class="cta-button">
+                <i class="fab fa-whatsapp"></i> Hubungi Sutoro Sekarang (0813.1761.8271)
+            </a>
+        </div>
+    </section>
+    
+    <div class="floating-cta">
+        <a href="https://wa.me/6281317618271?text=Halo%20Bapak%20Sutoro%2C%20saya%20tertarik%20dengan%20properti%20Bonavida%20Park%20Purwokerto.%20Bisa%20jadwalkan%20survei%3F" title="WhatsApp Sutoro">
+            <i class="fab fa-whatsapp"></i> Chat Langsung
+        </a>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Memastikan background hero menggunakan Tampak Depan2.jpg
+            const heroSection = document.getElementById('header-hero');
+            if (heroSection) {
+                heroSection.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Tampak Depan2.jpg')`;
+            }
+
+            // Memastikan src foto profil menggunakan Profile Sutoro.jpg
+            const profileImg = document.getElementById('profile-picture');
+            if (profileImg) {
+                profileImg.src = "Profile Sutoro.jpg";
+            }
+        });
+
+        function calculateKPR() {
+            const price = parseFloat(document.getElementById('price').value);
+            const downPayment = parseFloat(document.getElementById('downPayment').value);
+            const tenor = parseFloat(document.getElementById('tenor').value);
+            const interestRate = parseFloat(document.getElementById('interestRate').value) / 100;
+            const resultDiv = document.getElementById('kpr-result');
+            
+            if (isNaN(price)) {
+                resultDiv.innerHTML = 'Mohon masukkan Harga Jual Properti untuk memulai simulasi.';
+                resultDiv.style.display = 'block';
+                return;
+            }
+            
+            const minDP = price * 0.1;
+
+            if (isNaN(downPayment) || isNaN(tenor) || isNaN(interestRate) || downPayment < minDP) {
+                if (isNaN(downPayment) || isNaN(interestRate)) {
+                     resultDiv.innerHTML = 'Mohon lengkapi kolom Uang Muka (DP) dan Suku Bunga (Bunga Bank) untuk memulai simulasi.';
+                } else if (downPayment < minDP) {
+                     resultDiv.innerHTML = `Mohon masukkan DP minimal 10% (${new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(minDP)}).`;
+                } else {
+                     resultDiv.innerHTML = 'Mohon masukkan angka yang valid.';
+                }
+                resultDiv.style.display = 'block';
+                return;
+            }
+
+            const loanAmount = price - downPayment;
+            const monthlyInterestRate = interestRate / 12;
+            const totalMonths = tenor * 12;
+            
+            // Formula Cicilan KPR (PMT Formula)
+            let monthlyPayment;
+            if (monthlyInterestRate === 0) {
+                monthlyPayment = loanAmount / totalMonths;
+            } else {
+                monthlyPayment = loanAmount * (monthlyInterestRate * Math.pow(1 + monthlyInterestRate, totalMonths)) / (Math.pow(1 + monthlyInterestRate, totalMonths) - 1);
+            }
+
+            // Format ke Rupiah
+            const formattedPayment = new Intl.NumberFormat('id-ID', {
+                style: 'currency',
+                currency: 'IDR',
+                minimumFractionDigits: 0
+            }).format(monthlyPayment);
+            
+            const formattedLoanAmount = new Intl.NumberFormat('id-ID', { 
+                style: 'currency', 
+                currency: 'IDR', 
+                minimumFractionDigits: 0 
+            }).format(loanAmount);
+
+            resultDiv.innerHTML = `
+                <p>Pinjaman Pokok: ${formattedLoanAmount}</p>
+                <p style="font-size: 1.5rem; color: var(--primary-color);">Estimasi Cicilan Bulanan:</p>
+                <p style="font-size: 2rem; color: var(--secondary-color); font-weight: 700;">${formattedPayment}</p>
+                <p style="font-size: 0.9rem; font-style: italic;">(Tenor ${tenor} Tahun, Bunga ${interestRate * 100}% per Tahun)</p>
+            `;
+            resultDiv.style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
